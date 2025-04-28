@@ -2,6 +2,9 @@ import { Suspense } from "react";
 import ProductCard from "./product-card";
 import ProductCardSkeleton from "./skeletons/product-card-skeleton";
 
+// Add this export to make the component dynamic
+export const dynamic = "force-dynamic";
+
 async function getProducts(searchParams: {
   [key: string]: string | string[] | undefined;
 }) {

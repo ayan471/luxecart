@@ -23,8 +23,10 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "./ui/badge";
+import { Suspense } from "react";
 
-export default function ProductFilters() {
+// Wrap the component content in a function to use with Suspense
+function ProductFiltersContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -640,5 +642,18 @@ export default function ProductFilters() {
         )}
       </AnimatePresence>
     </>
+  );
+}
+
+// Main component with Suspense
+export default function ProductFilters() {
+  return (
+    <Suspense
+      fallback={
+        <div className="h-12 bg-muted/20 animate-pulse rounded-md"></div>
+      }
+    >
+      <ProductFiltersContent />
+    </Suspense>
   );
 }
