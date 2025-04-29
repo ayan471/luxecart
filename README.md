@@ -9,12 +9,6 @@ LuxeMarket is a sophisticated e-commerce platform built with Next.js, offering a
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Setup Instructions](#setup-instructions)
-- [Architecture](#architecture)
-- [Technical Decisions](#technical-decisions)
-- [Challenges and Solutions](#challenges-and-solutions)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
