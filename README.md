@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LuxeMarket - Premium E-commerce Platform
 
-## Getting Started
+![LuxeMarket Banner](/public/curated-luxury.png)
 
-First, run the development server:
+LuxeMarket is a sophisticated e-commerce platform built with Next.js, offering a premium shopping experience with a focus on quality products and seamless user interactions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup Instructions](#setup-instructions)
+- [Architecture](#architecture)
+- [Technical Decisions](#technical-decisions)
+- [Challenges and Solutions](#challenges-and-solutions)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### User Experience
 
-## Learn More
+- **Responsive Design**: Fully responsive across all device sizes
+- **Dark/Light Mode**: Theme toggle with system preference detection
+- **Animations**: Smooth transitions and micro-interactions using Framer Motion
+- **Offline Support**: Service worker implementation for offline functionality
 
-To learn more about Next.js, take a look at the following resources:
+### Shopping Experience
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Product Browsing**: Filter and sort products by category, price, rating, etc.
+- **Product Details**: Detailed product views with image gallery and specifications
+- **Search Functionality**: Search products by name, category, or description
+- **Drag and Drop**: Intuitive drag-and-drop interface for adding products to cart
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### User Management
 
-## Deploy on Vercel
+- **Authentication**: Secure user authentication with Clerk
+- **User Profiles**: Customizable user profiles with order history
+- **Wishlist**: Save products for later purchase
+- **Order Tracking**: Track order status and history
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Cart and Checkout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Shopping Cart**: Add, remove, and update quantities
+- **Persistent Cart**: Cart state persists across sessions
+- **Checkout Process**: Multi-step checkout with form validation
+- **Order Confirmation**: Detailed order confirmation with summary
+
+### Additional Features
+
+- **Analytics Dashboard**: User-specific purchase analytics and insights
+- **Contact Form**: Interactive contact form with validation
+- **About Page**: Company information with team profiles and milestones
+- **FAQ Section**: Frequently asked questions with accordion interface
+
+## Tech Stack
+
+- **Framework**: Next.js 15.1.3 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **State Management**: Zustand
+- **Authentication**: Clerk
+- **Animations**: Framer Motion
+- **Form Handling**: React Hook Form with Zod validation
+- **Icons**: Lucide React
+- **Charts**: Chart.js
+- **Offline Support**: Service Worker API
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ayan471/luxecart.git
+   cd luxemarket
+   npm i --legacy-peer-deps
+   ```
